@@ -1,0 +1,265 @@
+/* Media query for tablet and desktop*/
+@media (min-width: 768px){
+    body {
+        /*background-color: blue;*/
+    }
+    body{
+        margin: 0;
+    }
+
+    /*-------------------------------------------------------------------------------------------------------------------------------------------*/
+
+    /*left-side*/
+    #left{
+        height:42rem;
+        width: 35%;
+        margin-left: 10%;
+        /*background-color: aquamarine;*/
+        float: left;
+        margin-top: 3%;
+    }
+    input{
+        width:65%;
+        height: 30px;
+        margin-left: 5%;
+        border: 1px solid black;
+        cursor: pointer;
+    }
+    p{
+        font-size: 1.2rem;
+        margin-left: 5%;
+    }
+    textarea{
+        margin-left: 5%;
+        width: 65%;
+    }
+    button{
+        height: 30px;
+        width: 35%;
+        margin-left: 20%;
+        background-color: black;
+        color: white;
+    }
+    button:hover{
+        transition: 0.5s ease-in all;
+        cursor: pointer;
+        background-color:white;
+        color: black;
+        font-weight: 700;
+    }
+
+
+    /*right-side*/
+    #right{
+        height:42rem;
+        width: 47%;
+       /* background-color: rgb(8, 91, 63);*/
+        float: left;
+        margin-top: 3%;
+    }
+
+    .event{
+        margin-left: 10%;
+    }
+    .input1{
+        width: 33%; 
+        margin-left: 12%;
+    }
+    .button1{
+        width: 20%; 
+        margin-left: 1%;
+    }
+    .button1:hover{
+        transition: 0.5s ease-in all;
+        cursor: pointer;
+        background-color:white;
+        color: black;
+        font-weight: 700;
+    }
+
+    .button2{
+        width: 10%;
+        margin-top: -7%;
+        float: left;
+        margin-left: 92%;
+    }
+    #boxContainer{
+        height:35rem;
+        width: 80%;
+        margin-left: 10%;
+        /*background-color: rgb(15, 209, 144);*/
+        border: 1px solid rgba(102, 101, 101, 0.149);
+        margin-top: 5%;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        border-radius: 10spx;
+    }
+
+    .box {
+        height: fit-height;
+        width: 96.5%;
+        /* background-color: white;*/
+         border-radius: 10px;
+         margin-bottom: 1rem;
+         margin-left: 1.7%;
+         border: 1px solid black;
+    }
+    .delete{
+        margin-left: 93%;
+        margin-top: 4%;
+    }
+    
+    h4{
+        font-size:1.2rem;
+        color:black;
+        margin-left: 5%;
+        margin-top: -1%;
+        font-weight: bold;
+    }
+    font{
+
+        justify-content: space-between;
+        font-size:1.2rem;
+        color:black;
+        margin-left: 5%;
+        font-weight: 500;
+    }
+
+    .downarrow {
+        text-align: center;
+        display: grid;
+    }
+    .description{
+        padding: 5%;
+        padding-top: 0%;
+        user-select: none;
+        font-size: 1.1rem;
+    }
+    i{
+        cursor: pointer !important;
+    }
+    *{
+        caret-color: rgba(255, 0, 0, 0);
+    }
+
+    /*footer*/
+    footer{
+        position: absolute;
+        top: 97%;
+        left:43%;
+    }
+    }
+    
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* Media query for mobile*/
+@media (min-width: 6.2rem) and (max-width: 47.9rem) {
+    body {
+        /* background-color: rgb(23, 207, 94); */
+        font-family: 'Poppins', sans-serif;
+    }
+
+
+    /*left-side*/
+    input{
+        width:85%;
+        height: 30px;
+        margin-left: 5%;
+        border: 1px solid black;
+  
+    }
+    p{
+        font-size: 1rem;
+        margin-left: 5%;
+    }
+
+    textarea{
+        margin-left: 5%;
+        width: 85%;
+    }
+    button{
+        height: 30px;
+        width: 55%;
+        margin-left: 22%;
+        background-color: black;
+        color: white;
+    }
+
+
+    /*right-side*/
+    #right{
+        margin-top: 17%;
+    }
+    #boxContainer{
+        margin-top: 19%;
+    }
+
+    .box{
+        border: 1px solid black;
+        border-radius: 10px;
+        margin-top: 3.2%;
+    }
+    .event{
+        margin-left: 5%;
+    }
+    .input1{
+        width: 45%; 
+        margin-left: 5%;
+    }
+    .button1{
+        height: 30px;
+        width: 55%;
+        margin-left: 21%;
+        margin-top: 9%;
+        background-color: black;
+        color: white;
+    }
+    .button2{
+        width: 20%;
+        margin-top: -1%;
+        float: left;
+        margin-left: 41%;
+        position: relative;
+    }
+    .delete{
+        position: absolute;
+        margin-left: 80%;
+        margin-top: 8%;
+    }   
+    h4{
+        font-size:1rem;
+        color:black;
+        margin-left: 5%;
+        margin-top: 11%;
+        font-weight: bold;
+    }
+    font{
+        font-size:14px;
+        color:black;
+        margin-left: 4%;
+        font-weight: 500;
+    }
+    i{
+        margin-left: 45%;
+    }
+    .description{
+        font-size: 1rem;
+        padding-right: 3%;
+    }
+
+    /*footer*/
+
+    footer{
+        position: absolute;
+        margin-top: 12%;
+        left:17%;
+        font-size: 13px;
+      }
+    
+}
+
+
+svg, path{
+    cursor: pointer;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="todolist.js"></script>
+    <link rel="stylesheet" href="todolist.css">
+</head>
+
+<body onload="initializeDB()">
+    <!-- Used for Creating Element-->
+    <div id="left">
+        <form>
+            <p>Choose Date</p>
+            <input type="date" required>
+            <br>
+            <p>Event Name</p>
+            <input type="text" required oninput="textCount(this,80)" maxlength="80">
+            <p id="charscount">
+                <p class="textRemaining">80 / 80 Characters left</p>
+            </p>
+            <p>Start Time</p>
+            <input type="time" required>
+            <br>
+            <p>End Time</p>
+            <input type="time" required>
+            <br>
+            <p>Description</p>
+            <textarea cols="40" rows="5" oninput="textCount(this,300)" maxlength="300"></textarea>
+            <p id="charscount">
+                <p class="textRemaining">300 / 300 Characters left</p>
+            </p>
+            <br>
+            <!-- <button>Create Your Event</button> -->
+            <input type="Submit" value="Create Event" onclick="addData(this)">
+            <br>
+            <br>
+        </form>
+
+    </div>
+
+    <!--Used for Display and Delete element-->
+    <div id="right">
+        <p class="event">Your Event List <input type="date" title="Select your date" class="input1">
+            <button class="button1" onclick="dateFilter(this)">Search</button></p>
+            <button class="button2" onclick=" refreshPage()">Refresh</button>
+
+        <div id="boxContainer">
+            
+        </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+        © Copyright 2024 All rights reserved
+    </footer>
+
+</body>
+
+</html>
